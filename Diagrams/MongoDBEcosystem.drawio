@@ -1,0 +1,95 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="fD1ZhCcSNdVP6opRCMvP">
+    <mxGraphModel dx="1224" dy="1226" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-15" edge="1" parent="1" source="t7BHrJU1DXmQ90nVlMXa-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="t7BHrJU1DXmQ90nVlMXa-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-16" edge="1" parent="1" source="t7BHrJU1DXmQ90nVlMXa-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="t7BHrJU1DXmQ90nVlMXa-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="665" y="305" />
+              <mxPoint x="665" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" value="&lt;div&gt;MongoDB Database&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="460" x="185" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-20" edge="1" parent="1" source="t7BHrJU1DXmQ90nVlMXa-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="t7BHrJU1DXmQ90nVlMXa-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="345" />
+              <mxPoint x="165" y="575" />
+              <mxPoint x="860" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Self-Managed /&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Enterprise&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="185" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-19" edge="1" parent="1" source="t7BHrJU1DXmQ90nVlMXa-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="t7BHrJU1DXmQ90nVlMXa-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="495" y="345" />
+              <mxPoint x="495" y="555" />
+              <mxPoint x="805" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Atlas (Cloud)" vertex="1">
+          <mxGeometry height="40" width="140" x="345" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" value="&lt;div&gt;CloudManager /&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;OpsManager&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="185" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Compass" vertex="1">
+          <mxGeometry height="40" width="300" x="185" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;div&gt;BI Connectors&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="300" x="185" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;div&gt;MongoDB Charts&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="300" x="185" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-18" edge="1" parent="1" source="t7BHrJU1DXmQ90nVlMXa-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="t7BHrJU1DXmQ90nVlMXa-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="655" y="345" />
+              <mxPoint x="655" y="535" />
+              <mxPoint x="750" y="535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Mobile" vertex="1">
+          <mxGeometry height="40" width="140" x="505" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" value="&lt;div&gt;MongoDB Database&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="695" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;Serverless Query API&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="695" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-17" edge="1" parent="1" source="t7BHrJU1DXmQ90nVlMXa-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="t7BHrJU1DXmQ90nVlMXa-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="935" y="395" />
+              <mxPoint x="935" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;Serverless Functions&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="695" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;Database Triggers&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="695" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="t7BHrJU1DXmQ90nVlMXa-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;Real-Time Sync&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="695" y="475" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

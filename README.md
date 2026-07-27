@@ -3,26 +3,40 @@
 ## Contents <!-- omit in toc -->
 
 - [1. Whats is MongoDb?](#1-whats-is-mongodb)
-  - [1.1. Json format and in collections as documents](#11-json-format-and-in-collections-as-documents)
-- [2. NoSQL Characteristics](#2-nosql-characteristics)
-- [3. SQL vs NoSQL](#3-sql-vs-nosql)
-- [4. Summary](#4-summary)
-- [5. String connection](#5-string-connection)
-- [6. Commands](#6-commands)
+  - [1.1. How it works](#11-how-it-works)
+  - [1.2. JSON (BSON) Data Format](#12-json-bson-data-format)
+  - [1.3. BSON Data Structure](#13-bson-data-structure)
+  - [1.4. Relations](#14-relations)
+- [2. MongoDB Ecosystem](#2-mongodb-ecosystem)
+  - [2.1. Working with MongoDB](#21-working-with-mongodb)
+  - [2.2. A Closer Look](#22-a-closer-look)
+  - [2.3. Using MongoDB Drivers](#23-using-mongodb-drivers)
+  - [2.4. NoSQL Characteristics](#24-nosql-characteristics)
+  - [2.5. SQL vs NoSQL](#25-sql-vs-nosql)
+  - [2.6. Summary](#26-summary)
+- [3. Document \& CRUD Basics](#3-document--crud-basics)
+- [4. String connection](#4-string-connection)
+- [5. Commands](#5-commands)
 
 # 1. Whats is MongoDb?
 
-- MongoDB introduces us as an open source, document-oriented NoSQL database designed for ease of development and scaling.
-- There are many NoSQL databases on the market today such as Cassandra, BigTable, Dynamo (AWS).
+- What does "Mongo" mean?
+  **Humongous** - MongoDB is designed to store and manage very large amounts of data.
+- MongoDB is an open-source, document-oriented NoSQL database designed for ease of development and horizontal scaling.
+- There are many NoSQL databases on the market today, including Cassandra, Bigtable, and Amazon DynamoDB (AWS).
 
-## 1.1. Json format and in collections as documents
+## 1.1. How it works
+
+![MongoDB Structure](/Images/MongoDBStructure.png)
+
+## 1.2. JSON (BSON) Data Format
 
 - Every record in MongoDB is actually a **document**.
   - Documents are stored in MongoDB in JSON like Binary JSON (BSON) format.
 - **BSON** documents are objects that contain an ordered list of the elements they store.
   - Each element consists of a domain name and a certain type of value.
-  - BSON example:
-    ```
+  - JSON (BSON) data format:
+    ```json
     {
       "name": "Jefté",
       "age": 33,
@@ -43,13 +57,37 @@
   - It keeps the data structurally in Json format and in documents.
   - Queries can be written in any field or by range.
   - If we compare the structures in MongoDB with the structures in their relational databases, it uses Collection instead of Tables and uses Documents instead of rows.
-    ![MongoDB Structure](/Images/MongoDBStructure.png)
 
-# 2. NoSQL Characteristics
+## 1.3. BSON Data Structure
+
+![BSON Data Structure](/Images/BSONDataStructure.png)
+
+## 1.4. Relations
+
+Relations
+No/ Few Relations!
+Relational Data needs to be merged manually!
+Kind of…
+
+# 2. MongoDB Ecosystem
+
+![MongoDB Ecosystem](/Images/MongoDBEcosystem.png)
+
+## 2.1. Working with MongoDB
+
+![Working with MongoDB](/Images/WorkingMongoDB.png)
+
+## 2.2. A Closer Look
+
+![Working with MongoDB](/Images/WorkingMongoDBCloseLook.png)
+
+## 2.3. Using MongoDB Drivers
+
+## 2.4. NoSQL Characteristics
 
 ![NoSQL Characteristics](/Images/NoSQLCharacteristics.png)
 
-# 3. SQL vs NoSQL
+## 2.5. SQL vs NoSQL
 
 | SQL                                                                         | NoSQL                                                       |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -59,18 +97,20 @@
 | Horizontal scaling is difficult / impossible; Vertical scaling is possible. | Both horizontal and vertical scaling is possible            |
 | Limitations for lots of (thousands) read and write queries per second.      | Great performance for mass (simple) read and write requests |
 
-# 4. Summary
+## 2.6. Summary
 
 - Alternative to SQL databases.
 - No strict schemas, fewer relations.
 - You can of course use schemas and reference-based relations but you got more flexibility.
 - Often, relations are also created by embedding other documents/ data.
 
-# 5. String connection
+# 3. Document & CRUD Basics
+
+# 4. String connection
 
 - `mongodb://localhost:27017` or `mongodb://mongoadmin:Master123456@localhost:27017/<database_name>?authSource=admin`
 
-# 6. Commands
+# 5. Commands
 
 - To get a Connection String.
   - `db.getMongo()`

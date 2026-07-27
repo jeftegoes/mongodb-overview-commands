@@ -1,0 +1,48 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="XgGilk-c-A0l1F6yMKjv">
+    <mxGraphModel dx="1224" dy="1226" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BgwyxP91MQ8c9TvaPzuS-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="Data" vertex="1">
+          <mxGeometry height="30" width="377" x="213" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="BgwyxP91MQ8c9TvaPzuS-10" edge="1" parent="1" source="BgwyxP91MQ8c9TvaPzuS-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="BgwyxP91MQ8c9TvaPzuS-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BgwyxP91MQ8c9TvaPzuS-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" value="&lt;div&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;MongoDB&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Server&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="213" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="BgwyxP91MQ8c9TvaPzuS-13" edge="1" parent="1" source="BgwyxP91MQ8c9TvaPzuS-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="BgwyxP91MQ8c9TvaPzuS-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BgwyxP91MQ8c9TvaPzuS-14" connectable="0" parent="BgwyxP91MQ8c9TvaPzuS-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Read + Write Data to&amp;nbsp;&lt;/div&gt;&lt;div&gt;Files (slow)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.08" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BgwyxP91MQ8c9TvaPzuS-23" edge="1" parent="1" source="BgwyxP91MQ8c9TvaPzuS-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="BgwyxP91MQ8c9TvaPzuS-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="542" y="515" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BgwyxP91MQ8c9TvaPzuS-24" connectable="0" parent="BgwyxP91MQ8c9TvaPzuS-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Read + Write Data in&amp;nbsp;&lt;/div&gt;&lt;div&gt;Memory (fast)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.3756" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BgwyxP91MQ8c9TvaPzuS-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;Storage&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Engine&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="500" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="BgwyxP91MQ8c9TvaPzuS-16" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.generic_database;" value="" vertex="1">
+          <mxGeometry height="78" width="59" x="807" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="BgwyxP91MQ8c9TvaPzuS-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Memory" vertex="1">
+          <mxGeometry height="40" width="90" x="791.5" y="495" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
