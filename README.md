@@ -2,92 +2,100 @@
 
 ## Contents <!-- omit in toc -->
 
-- [1. Whats is MongoDb?](#1-whats-is-mongodb)
-  - [1.1. How it works](#11-how-it-works)
-  - [1.2. JSON (BSON) Data Format](#12-json-bson-data-format)
-  - [1.3. BSON Data Structure](#13-bson-data-structure)
-  - [1.4. Relations](#14-relations)
-- [2. MongoDB Ecosystem](#2-mongodb-ecosystem)
-  - [2.1. Working with MongoDB](#21-working-with-mongodb)
-  - [2.2. A Closer Look](#22-a-closer-look)
-  - [2.3. Using MongoDB Drivers](#23-using-mongodb-drivers)
-  - [2.4. NoSQL Characteristics](#24-nosql-characteristics)
-  - [2.5. SQL vs NoSQL](#25-sql-vs-nosql)
-  - [2.6. Summary](#26-summary)
-- [3. Document \& CRUD Basics](#3-document--crud-basics)
-- [4. String connection](#4-string-connection)
-- [5. Commands](#5-commands)
+- [1. NoSQL](#1-nosql)
+- [2. Whats is MongoDb?](#2-whats-is-mongodb)
+  - [2.1. How it works](#21-how-it-works)
+  - [2.2. JSON (BSON) Data Format](#22-json-bson-data-format)
+  - [2.3. Relationships](#23-relationships)
+- [3. MongoDB Ecosystem](#3-mongodb-ecosystem)
+  - [3.1. Working with MongoDB](#31-working-with-mongodb)
+  - [3.2. A Closer Look](#32-a-closer-look)
+  - [3.3. Using MongoDB Drivers](#33-using-mongodb-drivers)
+  - [3.4. NoSQL Characteristics](#34-nosql-characteristics)
+  - [3.5. SQL vs NoSQL](#35-sql-vs-nosql)
+  - [3.6. Summary](#36-summary)
+- [4. Document \& CRUD Basics](#4-document--crud-basics)
+- [5. String connection](#5-string-connection)
+- [6. Commands](#6-commands)
 
-# 1. Whats is MongoDb?
+# 1. NoSQL
+
+- **NoSQL** is a **database paradigm** that encompasses several types of non-relational databases designed to provide:
+  - Flexibility.
+  - Scalability.
+  - High performance.
+- Unlike relational databases, NoSQL databases do not require data to be stored in **fixed tables** with predefined schemas.
+- Instead, they use different data models depending on the application's needs.
+- The four main NoSQL database paradigms are:
+  - **Document databases** (e.g., MongoDB)
+  - **Key-value databases** (e.g., Redis)
+  - **Wide-column databases** (e.g., Cassandra)
+  - **Graph databases** (e.g., Neo4j)
+
+# 2. Whats is MongoDb?
 
 - What does "Mongo" mean?
   **Humongous** - MongoDB is designed to store and manage very large amounts of data.
-- MongoDB is an open-source, document-oriented NoSQL database designed for ease of development and horizontal scaling.
-- There are many NoSQL databases on the market today, including Cassandra, Bigtable, and Amazon DynamoDB (AWS).
+  - MongoDB is an **open-source, document-oriented NoSQL database** designed to store and manage large amounts of data efficiently.
+  - Unlike traditional relational databases (such as MySQL or PostgreSQL), MongoDB stores data as **documents** instead of rows in tables.
 
-## 1.1. How it works
+## 2.1. How it works
 
-![MongoDB Structure](/Images/MongoDBStructure.png)
+- A MongoDB server can host multiple databases.
+- Each database contains **collections**, and each collection stores **documents**.
+  ![MongoDB Structure](/Images/MongoDBStructure.png)
 
-## 1.2. JSON (BSON) Data Format
+## 2.2. JSON (BSON) Data Format
 
 - Every record in MongoDB is actually a **document**.
   - Documents are stored in MongoDB in JSON like Binary JSON (BSON) format.
 - **BSON** documents are objects that contain an ordered list of the elements they store.
   - Each element consists of a domain name and a certain type of value.
-  - JSON (BSON) data format:
-    ```json
-    {
-      "name": "Jefté",
-      "age": 33,
-      "address": {
-        "city": "Brazil"
+- **JSON data format**
+  ```json
+  {
+    "name": "Jefté",
+    "age": 33,
+    "address": {
+      "city": "Brazil"
+    },
+    "hobbies": [
+      {
+        "name": "Lego"
       },
-      "hobbies": [
-        {
-          "name": "Lego"
-        },
-        {
-          "name": "Games"
-        }
-      ]
-    }
-    ```
-- **Document based NoSql database**
-  - It keeps the data structurally in Json format and in documents.
-  - Queries can be written in any field or by range.
-  - If we compare the structures in MongoDB with the structures in their relational databases, it uses Collection instead of Tables and uses Documents instead of rows.
+      {
+        "name": "Games"
+      }
+    ]
+  }
+  ```
+- BSON Data Structure
+  ![BSON Data Structure](/Images/BSONDataStructure.png)
 
-## 1.3. BSON Data Structure
+## 2.3. Relationships
 
-![BSON Data Structure](/Images/BSONDataStructure.png)
+- Unlike relational databases, MongoDB minimizes the use of relationships between collections.
+- Instead of splitting related data across multiple tables and joining them later, MongoDB often stores related data together in the same document using **embedded documents**.
 
-## 1.4. Relations
-
-Relations
-No/ Few Relations!
-Relational Data needs to be merged manually!
-Kind of…
-
-# 2. MongoDB Ecosystem
+# 3. MongoDB Ecosystem
 
 ![MongoDB Ecosystem](/Images/MongoDBEcosystem.png)
 
-## 2.1. Working with MongoDB
+## 3.1. Working with MongoDB
 
 ![Working with MongoDB](/Images/WorkingMongoDB.png)
 
-## 2.2. A Closer Look
+## 3.2. A Closer Look
 
 ![Working with MongoDB](/Images/WorkingMongoDBCloseLook.png)
 
-## 2.3. Using MongoDB Drivers
+## 3.3. Using MongoDB Drivers
 
-## 2.4. NoSQL Characteristics
+## 3.4. NoSQL Characteristics
 
 ![NoSQL Characteristics](/Images/NoSQLCharacteristics.png)
 
-## 2.5. SQL vs NoSQL
+## 3.5. SQL vs NoSQL
 
 | SQL                                                                         | NoSQL                                                       |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -97,25 +105,25 @@ Kind of…
 | Horizontal scaling is difficult / impossible; Vertical scaling is possible. | Both horizontal and vertical scaling is possible            |
 | Limitations for lots of (thousands) read and write queries per second.      | Great performance for mass (simple) read and write requests |
 
-## 2.6. Summary
+## 3.6. Summary
 
 - Alternative to SQL databases.
 - No strict schemas, fewer relations.
 - You can of course use schemas and reference-based relations but you got more flexibility.
 - Often, relations are also created by embedding other documents/ data.
 
-# 3. Document & CRUD Basics
+# 4. Document & CRUD Basics
 
-# 4. String connection
+# 5. String connection
 
 - `mongodb://localhost:27017` or `mongodb://mongoadmin:Master123456@localhost:27017/<database_name>?authSource=admin`
 
-# 5. Commands
+# 6. Commands
 
 - To get a Connection String.
   - `db.getMongo()`
 - Enter into a mongo shell
-  - `mongo` or `mongosh`
+  - `mongosh`
   - Connect with username
     - `mongosh --username <username>`
 - Show all databases
