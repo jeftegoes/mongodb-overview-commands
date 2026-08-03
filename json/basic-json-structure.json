@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 1299.99,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Mouse",
+      "price": 49.95,
+      "available": false
+    },
+    {
+      _id: "custom-id",
+      "id": 2,
+      "name": "Mouse",
+      "price": 49.95,
+      "available": false
+    }
+  ]
+}

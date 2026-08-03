@@ -14,7 +14,7 @@
   - [3.4. NoSQL Characteristics](#34-nosql-characteristics)
   - [3.5. SQL vs NoSQL](#35-sql-vs-nosql)
   - [3.6. Summary](#36-summary)
-- [4. Document \& CRUD Basics](#4-document--crud-basics)
+- [4. CRUD](#4-crud)
 - [5. String connection](#5-string-connection)
 - [6. Commands](#6-commands)
 
@@ -112,7 +112,21 @@
 - You can of course use schemas and reference-based relations but you got more flexibility.
 - Often, relations are also created by embedding other documents/ data.
 
-# 4. Document & CRUD Basics
+# 4. CRUD
+
+- **Create**
+  - `insertOne(data, options)`
+  - `insertMany(data, options)`
+- **Read**
+  - `find(filter, options)`
+  - `findOne(filter, options)`
+- **Update**
+  - `updateOne(filter, data, options)`
+  - `updateMany(filter, data, options)`
+  - `replaceOne(filter, data, options)`
+- **Delete**
+  - `deleteOne(filter, options)`
+  - `deleteMany(filter, options)`
 
 # 5. String connection
 
@@ -122,23 +136,23 @@
 
 - To get a Connection String.
   - `db.getMongo()`
-- Enter into a mongo shell
+- Enter into a mongo shell.
   - `mongosh`
-  - Connect with username
+  - Connect with username.
     - `mongosh --username <username>`
-- Show all databases
+- Show all databases.
   - `show databases`
   - `show dbs`
-- Show all collections
+- Show all collections.
   - `show collections`
-- Create a new database
+- Create a new database.
   - `use <database_name>`
-- Create new collection
+- Create new collection.
   - `db.createCollection("<collection_name>")`
-- Insert ONE object into collection
+- Insert ONE object into collection.
   - `db.<collection_name>.insertOne({<object>>})` # Ex: db.books.insertOne({name: "Clean Code", author: "Uncle Bob"})
-  - Result:
-    ```
+  - **Result**
+    ```json
         [
             {
                 _id: ObjectId('65ef5a432a78dcfaea37258b'),
@@ -149,8 +163,8 @@
     ```
 - Insert MANY objects once time into collection
   - `db.books.insertMany([{<object>>}])` # Ex: db.books.insertMany([{name: "Clean Code", author: "Uncle Bob"}, {name: "Clean Architecture", author: "Uncle Bob"}])
-  - Result:
-    ```
+  - **Result**
+    ```json
         [
             {
                 _id: ObjectId('65ef5b502a78dcfaea372590'),
@@ -164,10 +178,12 @@
             }
         ]
     ```
-- Find all objects of collection
+- Remove the collection
+  - `db.<collection_name>.drop()`
+- Find all objects of collection.
   - `db.<collection_name>.find()` # Ex: db.books.find()
-- Remove all itens of collection
+- Remove all itens of collection.
   - db.`<collection_name>`.remove({})
-- Delete database
+- Delete database.
   1. `use <database_name>`
   2. `db.dropDatabase()`
