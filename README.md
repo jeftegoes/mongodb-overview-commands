@@ -15,6 +15,10 @@
   - [3.5. SQL vs NoSQL](#35-sql-vs-nosql)
   - [3.6. Summary](#36-summary)
 - [4. CRUD](#4-crud)
+  - [4.1. Databases, Collections, Documents](#41-databases-collections-documents)
+  - [4.2. JSON](#42-json)
+  - [4.3. CRUD Operations](#43-crud-operations)
+    - [4.3.1. Examples](#431-examples)
 - [5. String connection](#5-string-connection)
 - [6. Commands](#6-commands)
 
@@ -43,7 +47,7 @@
 
 - A MongoDB server can host multiple databases.
 - Each database contains **collections**, and each collection stores **documents**.
-  ![MongoDB Structure](/Images/MongoDBStructure.png)
+  ![MongoDB Structure](/images/MongoDBStructure.png)
 
 ## 2.2. JSON (BSON) Data Format
 
@@ -70,7 +74,7 @@
   }
   ```
 - BSON Data Structure
-  ![BSON Data Structure](/Images/BSONDataStructure.png)
+  ![BSON Data Structure](/images/BSONDataStructure.png)
 
 ## 2.3. Relationships
 
@@ -79,21 +83,21 @@
 
 # 3. MongoDB Ecosystem
 
-![MongoDB Ecosystem](/Images/MongoDBEcosystem.png)
+![MongoDB Ecosystem](/images/MongoDBEcosystem.png)
 
 ## 3.1. Working with MongoDB
 
-![Working with MongoDB](/Images/WorkingMongoDB.png)
+![Working with MongoDB](/images/WorkingMongoDB.png)
 
 ## 3.2. A Closer Look
 
-![Working with MongoDB](/Images/WorkingMongoDBCloseLook.png)
+![Working with MongoDB](/images/WorkingMongoDBCloseLook.png)
 
 ## 3.3. Using MongoDB Drivers
 
 ## 3.4. NoSQL Characteristics
 
-![NoSQL Characteristics](/Images/NoSQLCharacteristics.png)
+![NoSQL Characteristics](/images/NoSQLCharacteristics.png)
 
 ## 3.5. SQL vs NoSQL
 
@@ -114,19 +118,39 @@
 
 # 4. CRUD
 
+## 4.1. Databases, Collections, Documents
+
+![Databases, Collections, Documents](/images/databases-collections-documents.png)
+
+## 4.2. JSON
+
+![JSON Structure](/images/json-structure.png)
+
+## 4.3. CRUD Operations
+
+![CRUD Operations](/images/crud-operations.png)
+
+### 4.3.1. Examples
+
 - **Create**
-  - `insertOne(data, options)`
-  - `insertMany(data, options)`
+  - `db.products.insertOne({"name" : "shoes", "price": 20.3})`
+  - `db.products.insertOne({"name" : "gloves", _id: "my-custom-id"})`
+  - `db.products.insertMany([{"name" : "gloves"}, {"name" : "shoes"}])`
 - **Read**
-  - `find(filter, options)`
-  - `findOne(filter, options)`
+  - `db.products.find()`
+  - `db.products.find({"name" : "gloves"})`
+  - `db.products.find({"price" : {$gt: 10}})` # gt = Greater than
 - **Update**
-  - `updateOne(filter, data, options)`
-  - `updateMany(filter, data, options)`
-  - `replaceOne(filter, data, options)`
+  - `db.products.updateOne({"name" : "bag"}, {$set: {"name" : "gloves"}})`
+  - `db.products.updateOne({}, {$set: {"name" : "shirt"}})`
+  - `db.products.updateMany({}, {$set: {"marker" : "toDelete"}})`
+  - `db.products.replaceOne({_id: ObjectId('6a7209b7cf1fb8d2fd794e20')}, {"name" : "gloves"})`
 - **Delete**
-  - `deleteOne(filter, options)`
-  - `deleteMany(filter, options)`
+  - `db.products.deleteOne({})`
+  - `db.products.deleteOne({"name" : "shoes"})`
+  - `db.products.deleteMany({"marker" : "toDelete"})`
+  - **Remove**
+    - `db.products.remove({})`
 
 # 5. String connection
 
