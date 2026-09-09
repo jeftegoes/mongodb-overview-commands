@@ -19,8 +19,22 @@
   - [4.2. JSON](#42-json)
   - [4.3. CRUD Operations](#43-crud-operations)
     - [4.3.1. Examples](#431-examples)
-- [5. String connection](#5-string-connection)
-- [6. Commands](#6-commands)
+- [5. Unique IDs](#5-unique-ids)
+- [6. Embedded Documents](#6-embedded-documents)
+- [7. Projection](#7-projection)
+- [8. Schema-less Or Not?](#8-schema-less-or-not)
+  - [8.1. To Schema Or Not To Schema](#81-to-schema-or-not-to-schema)
+- [9. Data Types](#9-data-types)
+- [10. Data Schemas \& Data Modelling](#10-data-schemas--data-modelling)
+- [11. Relations](#11-relations)
+  - [11.1. Example #1 - Patient \<-\> Disease Summary](#111-example-1---patient---disease-summary)
+  - [11.2. Example #2 - Person \<-\> Car](#112-example-2---person---car)
+  - [11.3. Example #3 - Thread \<-\> Answers](#113-example-3---thread---answers)
+  - [11.4. Example #4 - City \<-\> Citizens](#114-example-4---city---citizens)
+  - [11.5. Example #5 - Customers \<-\> Products (Orders)](#115-example-5---customers---products-orders)
+  - [11.6. Example #6 - Books \<-\> Authors](#116-example-6---books---authors)
+- [12. String connection](#12-string-connection)
+- [13. Commands](#13-commands)
 
 # 1. NoSQL
 
@@ -140,6 +154,7 @@
   - `db.products.find()`
   - `db.products.find({"name" : "gloves"})`
   - `db.products.find({"price" : {$gt: 10}})` # gt = Greater than
+  - `db.products.find({}, {_id: 0, "name": 1})` # 0 - To exclude
 - **Update**
   - `db.products.updateOne({"name" : "bag"}, {$set: {"name" : "gloves"}})`
   - `db.products.updateOne({}, {$set: {"name" : "shirt"}})`
@@ -152,11 +167,119 @@
   - **Remove**
     - `db.products.remove({})`
 
-# 5. String connection
+# 5. Unique IDs
+
+- Wb MUST have an `_id`.
+- MongoDB creates an `ObjectId()` for you.
+- You can set any other Value.
+  - `db.products.insertOne({"name" : "gloves", _id: "my-custom-id"})`
+
+# 6. Embedded Documents
+
+![Embedded Documents](/images/embedded-documents.png)
+
+# 7. Projection
+
+![Projection](/images/projection.png)
+
+# 8. Schema-less Or Not?
+
+- Isn't MongoDB all about having NO data Schemas?
+  - MongoDB enforces no schemas! Documents don't have to use the same schema inside of one collection.
+    - But that does not mean that you can't use some kind of schema.
+
+## 8.1. To Schema Or Not To Schema
+
+![To Schema Or Not To Schema](/images/to-schema-or-not-to-schema.png)
+
+# 9. Data Types
+
+- `Text` - "Jefté"
+- `Boolean` - true
+- **Numbers**
+  - `Integer (int32)` - 55
+  - `NumberLong (int64)` - 10000000000
+  - `NumberDecimal` - 12.99
+- `ObjectId` - ObjectId("sfasd")
+- **Dates**
+  - `ISODate` - ISODate("2018-09-09")
+  - `Timestamp` - Timestamp(11421532)
+- `Embedded Document` - { "a": { ... } }
+- `Array` - { "b": [ ... ] }
+
+# 10. Data Schemas & Data Modelling
+
+- Which Data does my App need or generate?
+  - User Information, Product Information, Orders, ...
+    - Defines the Fields you'll need (and how they relate).
+- Where do I need my Data?
+  - Welcome Page, Products List Page, Orders Page.
+    - Defines your required collections + field groupings.
+- Which kind of Data or Information do I want to display?
+  - Welcome Page: Product Names; Products Page: ...
+    - Defines which queries you'll need
+- How often do I fetch my data?
+  - For every page reload.
+    - Defines whether you should optimize for easy fetching.
+- How often do I write or change my data?
+  - Orders => Often.
+  - Product Data => Rarely.
+    - Defines whether you should optimize for easy writing.
+- **Fetching a lot?**
+  - **Goal:** Store Data in the Format you need in your Frontend! Don't run complex transformation queries!
+- **Writing a lot?**
+  - **Goal:** Store Data such that you avoid duplicates and redundancy!
+
+# 11. Relations
+
+![Relations](/images/relations-options-1.png)
+
+## 11.1. Example #1 - Patient <-> Disease Summary
+
+- **Using embedded**
+  - "One patient has one disease summary, a disease summary belongs to one patient.".
+    - `db.patients.insertOne({name: "Jefté", age: 35, diseaseSummary: {diseases: ["cold", "broken leg"]}})`
+
+## 11.2. Example #2 - Person <-> Car
+
+- **Using reference**
+  - "One person has one car, a car belongs to one person.".
+    - `db.persons.insertOne({name: "Jefté", age: 35, salary: 3000})`
+    - `db.cars.insertOne({model: "BMW", price: 40000, owner: ObjectId("5b98d4654d01c52e1637a99b")})`
+
+## 11.3. Example #3 - Thread <-> Answers
+
+- **Using embedded**
+  - "One thread has many answers, one answer belongs to one question thread.".
+  - `db.questionThreads.insertOne({creator: "Jefté", question: "How does that work?", answers: [{text: "Like that."}, {text: "Thanks!"}]})`
+
+## 11.4. Example #4 - City <-> Citizens
+
+- **Using reference**
+  - "One city has many citizens, one citizen belongs to one city.".
+    - `db.cities.insertOne({name: "New York City", coordinates: {lat: 21, lng: 55}})`
+    - `db.citizens.insertMany([{name: "Jefté Goes", cityId: ObjectId("5b98d6b44d01c52e1637a99f")}, {name: "Brenno Salvador", cityId: ObjectId("5b98d6b44d01c52e1637a99f")}])`
+
+## 11.5. Example #5 - Customers <-> Products (Orders)
+
+- **Using embedded**
+  - "One customer has many products (via orders), a product belongs to many customers.".
+    - `db.customers.insertOne({name: "Jefté", age: 35})`
+    - `db.customers.updateOne({}, {$set: {orders: [{title: "A Book", price: 12.99, quantity: 2}]}})`
+
+## 11.6. Example #6 - Books <-> Authors
+
+- **Using reference**
+  - "One book has many authors, an author belongs to many books.".
+  - `db.books.insertOne({name: "My favorite Book", authors: [{name: "Capitães da Areia"}, {name: "Vidas Secas"}]})`
+  - `db.authors.insertMany([{name: "Jorge Amado", age: 78, address: {street: "Bahia"}}, {name: "Graciliano Ramos", age: 55, address: {stree: "Rio de Janeiro"}}])`
+  - `db.books.updateOne({}, {$set: {authors: [ObjectId("5b98d9e44d01c52e1637a9a6"), ObjectId("5b98d9e44d01c52e1637a9a7")]}})`
+
+# 12. String connection
 
 - `mongodb://localhost:27017` or `mongodb://mongoadmin:Master123456@localhost:27017/<database_name>?authSource=admin`
 
-# 6. Commands
+# 13. Commands
 
 - To get a Connection String.
   - `db.getMongo()`

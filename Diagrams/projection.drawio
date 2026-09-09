@@ -1,0 +1,28 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="uGB1UJ4BaTwAa6WRY3Rv">
+    <mxGraphModel dx="1224" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KTC69008AisXKOegMz2s-1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;fontSize=25;spacingLeft=10;" value="&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;_id&quot;: &quot;...&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;name&quot;: &quot;Jefté&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;age&quot;: 35,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;job&quot;: &quot;teacher&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="330" x="505" y="193" as="geometry" />
+        </mxCell>
+        <mxCell id="KTC69008AisXKOegMz2s-2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div style=&quot;font-size: 25px; text-align: left;&quot;&gt;{&lt;/div&gt;&lt;div style=&quot;font-size: 25px; text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;name&quot;: &quot;Jefté&quot;,&lt;/div&gt;&lt;div style=&quot;font-size: 25px; text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;age&quot;: 35&lt;/div&gt;&lt;div style=&quot;font-size: 25px; text-align: left;&quot;&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="330" x="505" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="KTC69008AisXKOegMz2s-4" edge="1" parent="1" source="KTC69008AisXKOegMz2s-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KTC69008AisXKOegMz2s-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KTC69008AisXKOegMz2s-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=20;fontStyle=1" value="&lt;div&gt;In Database&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="275" y="283" as="geometry" />
+        </mxCell>
+        <mxCell id="KTC69008AisXKOegMz2s-7" edge="1" parent="1" source="KTC69008AisXKOegMz2s-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KTC69008AisXKOegMz2s-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KTC69008AisXKOegMz2s-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=20;fontStyle=1" value="&lt;div&gt;In Application&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="265" y="538" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

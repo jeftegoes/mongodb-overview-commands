@@ -1,0 +1,40 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="Vm3X-103SOvvM9JvLAkn">
+    <mxGraphModel dx="1020" dy="1016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qeX6ogI8rEu0YJA9i8aL-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;verticalAlign=top;" value="Document" vertex="1">
+          <mxGeometry height="390" width="310" x="510" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="qeX6ogI8rEu0YJA9i8aL-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;" value="Embedded Document" vertex="1">
+          <mxGeometry height="110" width="290" x="520" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="qeX6ogI8rEu0YJA9i8aL-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;" value="Embedded Document" vertex="1">
+          <mxGeometry height="70" width="250" x="540" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="qeX6ogI8rEu0YJA9i8aL-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;" value="Embedded Document" vertex="1">
+          <mxGeometry height="110" width="290" x="520" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="qeX6ogI8rEu0YJA9i8aL-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;" value="Embedded Document" vertex="1">
+          <mxGeometry height="70" width="250" x="540" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="qeX6ogI8rEu0YJA9i8aL-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;" value="Embedded Document&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="290" x="520" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="qeX6ogI8rEu0YJA9i8aL-9" edge="1" parent="1" source="qeX6ogI8rEu0YJA9i8aL-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="qeX6ogI8rEu0YJA9i8aL-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qeX6ogI8rEu0YJA9i8aL-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;div&gt;Up to 100 Levels&amp;nbsp;&lt;/div&gt;&lt;div&gt;of Nesting&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="280" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="qeX6ogI8rEu0YJA9i8aL-10" edge="1" parent="1" source="qeX6ogI8rEu0YJA9i8aL-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="qeX6ogI8rEu0YJA9i8aL-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qeX6ogI8rEu0YJA9i8aL-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;div&gt;Max. 16mb /&amp;nbsp;&lt;/div&gt;&lt;div&gt;document&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="280" y="410" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

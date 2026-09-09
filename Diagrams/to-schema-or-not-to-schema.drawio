@@ -1,0 +1,60 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="HFUzCOfhoErRUs-DAIMT">
+    <mxGraphModel dx="1224" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FJip73MmHexCBomqqrAN-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="50" width="770" x="165" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FFFFFF;strokeWidth=3;" target="FJip73MmHexCBomqqrAN-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=20;fontColor=#FFFFFF;" value="Chaos!" vertex="1">
+          <mxGeometry height="30" width="60" x="175" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=20;fontColor=#FFFFFF;" value="SQL World!" vertex="1">
+          <mxGeometry height="30" width="120" x="805" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-6" parent="1" style="whiteSpace=wrap;html=1;fontSize=20;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Products" vertex="1">
+          <mxGeometry height="40" width="250" x="165" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-7" parent="1" style="whiteSpace=wrap;html=1;fontSize=20;align=left;spacingLeft=10;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;title&quot;: &quot;Book&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;price&quot;: 12.99&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="115" width="250" x="165" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-8" parent="1" style="whiteSpace=wrap;html=1;fontSize=20;align=left;spacingLeft=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;name&quot;: &quot;Bottle&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;available&quot;: true&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="143" width="250" x="165" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-9" parent="1" style="whiteSpace=wrap;html=1;fontSize=20;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Products" vertex="1">
+          <mxGeometry height="40" width="250" x="425" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-10" parent="1" style="whiteSpace=wrap;html=1;fontSize=20;align=left;spacingLeft=10;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;title&quot;: &quot;Book&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;price&quot;: 12.99&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="115" width="250" x="425" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-11" parent="1" style="whiteSpace=wrap;html=1;fontSize=20;align=left;spacingLeft=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;title&quot;: &quot;Bottle&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;price&quot;: 5.99,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;available&quot;: true&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="143" width="250" x="425" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-12" parent="1" style="whiteSpace=wrap;html=1;fontSize=20;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Products" vertex="1">
+          <mxGeometry height="40" width="250" x="685" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-13" parent="1" style="whiteSpace=wrap;html=1;fontSize=20;align=left;spacingLeft=10;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;title&quot;: &quot;Book&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;price&quot;: 12.99&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="115" width="250" x="685" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-14" parent="1" style="whiteSpace=wrap;html=1;fontSize=20;align=left;spacingLeft=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;title&quot;: &quot;Bottle&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&quot;price&quot;: 5.99&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="143" width="250" x="685" y="472" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-15" parent="1" style="whiteSpace=wrap;html=1;fontStyle=1;fontSize=15;" value="Very Different!" vertex="1">
+          <mxGeometry height="40" width="150" x="215" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-16" parent="1" style="whiteSpace=wrap;html=1;fontStyle=1;fontSize=15;" value="Extra Data" vertex="1">
+          <mxGeometry height="40" width="150" x="475" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="FJip73MmHexCBomqqrAN-17" parent="1" style="whiteSpace=wrap;html=1;fontStyle=1;fontSize=15;" value="Full Equality" vertex="1">
+          <mxGeometry height="40" width="150" x="735" y="450" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
