@@ -1,0 +1,37 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="O9JNjw3UWOjvixKN1ENI">
+    <mxGraphModel dx="1224" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZMQIjOik3pw2vt8ofMoE-3" edge="1" parent="1" source="ZMQIjOik3pw2vt8ofMoE-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" target="ZMQIjOik3pw2vt8ofMoE-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMQIjOik3pw2vt8ofMoE-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;div&gt;Patient A&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="240" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMQIjOik3pw2vt8ofMoE-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;Summary A&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="640" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMQIjOik3pw2vt8ofMoE-4" edge="1" parent="1" source="ZMQIjOik3pw2vt8ofMoE-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" target="ZMQIjOik3pw2vt8ofMoE-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMQIjOik3pw2vt8ofMoE-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;div&gt;Patient B&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="240" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMQIjOik3pw2vt8ofMoE-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;Summary B&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="640" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMQIjOik3pw2vt8ofMoE-7" edge="1" parent="1" source="ZMQIjOik3pw2vt8ofMoE-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" target="ZMQIjOik3pw2vt8ofMoE-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMQIjOik3pw2vt8ofMoE-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;div&gt;Patient C&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="240" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="ZMQIjOik3pw2vt8ofMoE-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;Summary C&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="640" y="465" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

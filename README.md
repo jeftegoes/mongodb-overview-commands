@@ -33,6 +33,7 @@
   - [11.4. Example #4 - City \<-\> Citizens](#114-example-4---city---citizens)
   - [11.5. Example #5 - Customers \<-\> Products (Orders)](#115-example-5---customers---products-orders)
   - [11.6. Example #6 - Books \<-\> Authors](#116-example-6---books---authors)
+  - [11.7. Relations - Options](#117-relations---options)
 - [12. String connection](#12-string-connection)
 - [13. Commands](#13-commands)
 
@@ -61,7 +62,7 @@
 
 - A MongoDB server can host multiple databases.
 - Each database contains **collections**, and each collection stores **documents**.
-  ![MongoDB Structure](/images/MongoDBStructure.png)
+  ![MongoDB Structure](/images/mongodb-structure.png)
 
 ## 2.2. JSON (BSON) Data Format
 
@@ -88,7 +89,7 @@
   }
   ```
 - BSON Data Structure
-  ![BSON Data Structure](/images/BSONDataStructure.png)
+  ![BSON Data Structure](/images/bson-data-structure.png)
 
 ## 2.3. Relationships
 
@@ -97,21 +98,21 @@
 
 # 3. MongoDB Ecosystem
 
-![MongoDB Ecosystem](/images/MongoDBEcosystem.png)
+![MongoDB Ecosystem](/images/mongodb-ecosystem.png)
 
 ## 3.1. Working with MongoDB
 
-![Working with MongoDB](/images/WorkingMongoDB.png)
+![Working with MongoDB](/images/working-mongodb.png)
 
 ## 3.2. A Closer Look
 
-![Working with MongoDB](/images/WorkingMongoDBCloseLook.png)
+![Working with MongoDB](/images/working-mongodb-close-look.png)
 
 ## 3.3. Using MongoDB Drivers
 
 ## 3.4. NoSQL Characteristics
 
-![NoSQL Characteristics](/images/NoSQLCharacteristics.png)
+![NoSQL Characteristics](/images/nosql-characteristics.png)
 
 ## 3.5. SQL vs NoSQL
 
@@ -236,11 +237,15 @@
 
 ## 11.1. Example #1 - Patient <-> Disease Summary
 
+![One-to-one](/images/one-to-one-patient-summary.png)
+
 - **Using embedded**
   - "One patient has one disease summary, a disease summary belongs to one patient.".
     - `db.patients.insertOne({name: "Jefté", age: 35, diseaseSummary: {diseases: ["cold", "broken leg"]}})`
 
 ## 11.2. Example #2 - Person <-> Car
+
+![One-to-one](/images/one-to-one-person-car.png)
 
 - **Using reference**
   - "One person has one car, a car belongs to one person.".
@@ -249,11 +254,15 @@
 
 ## 11.3. Example #3 - Thread <-> Answers
 
+![One-to-Many](/images/one-to-many-thread-answers.png)
+
 - **Using embedded**
   - "One thread has many answers, one answer belongs to one question thread.".
   - `db.questionThreads.insertOne({creator: "Jefté", question: "How does that work?", answers: [{text: "Like that."}, {text: "Thanks!"}]})`
 
 ## 11.4. Example #4 - City <-> Citizens
+
+![One-to-Many](/images/one-to-many-city-citizens.png)
 
 - **Using reference**
   - "One city has many citizens, one citizen belongs to one city.".
@@ -262,6 +271,8 @@
 
 ## 11.5. Example #5 - Customers <-> Products (Orders)
 
+![Many-to-Many](/images/many-to-many-customers-products.png)
+
 - **Using embedded**
   - "One customer has many products (via orders), a product belongs to many customers.".
     - `db.customers.insertOne({name: "Jefté", age: 35})`
@@ -269,11 +280,21 @@
 
 ## 11.6. Example #6 - Books <-> Authors
 
+![Many-to-Many](/images/many-to-many-books-authors.png)
+
 - **Using reference**
   - "One book has many authors, an author belongs to many books.".
   - `db.books.insertOne({name: "My favorite Book", authors: [{name: "Capitães da Areia"}, {name: "Vidas Secas"}]})`
   - `db.authors.insertMany([{name: "Jorge Amado", age: 78, address: {street: "Bahia"}}, {name: "Graciliano Ramos", age: 55, address: {stree: "Rio de Janeiro"}}])`
   - `db.books.updateOne({}, {$set: {authors: [ObjectId("5b98d9e44d01c52e1637a9a6"), ObjectId("5b98d9e44d01c52e1637a9a7")]}})`
+
+## 11.7. Relations - Options
+
+| Nested / Embedded Documents                                                                    | References                                                                                      |
+| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Group data together logically                                                                  | Split data across collections                                                                   |
+| Great for data that belongs together and is not really overlapping with other data             | Great for related but shared data as well as for data which is used in relations and standalone |
+| Avoid super-deep nesting (100+ levels) or extremely long arrays (16mb size limit per document) | Allows you to overcome nesting and size limits (by creating new documents)                      |
 
 # 12. String connection
 
