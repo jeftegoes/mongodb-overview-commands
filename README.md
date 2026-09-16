@@ -170,7 +170,7 @@
 
 # 5. Unique IDs
 
-- Wb MUST have an `_id`.
+- We MUST have an `_id`.
 - MongoDB creates an `ObjectId()` for you.
 - You can set any other Value.
   - `db.products.insertOne({"name" : "gloves", _id: "my-custom-id"})`
